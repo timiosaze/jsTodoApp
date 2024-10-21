@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <section class="my-10 mx-6">
+        <form class="max-w-sm mx-auto">
+            <label for="message" class="block mb-2 text-sm font-extrabold text-gray-900 dark:text-white">New Task</label>
+            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Task"></textarea>
+            <div class="text-right my-4">
+                <button class="py-2 px-4 outline text-sm hover:bg-slate-700 hover:scale-110 focus:bg-slate-700 ease-in hover:text-white transition bg-slate-300 border-sky-600 border-solid">
+                    <a href="./quiz.html" onclick="shuffle()">Add</a>
+                </button>
+            </div>
+            <label for="message" class="block mb-2 text-sm font-extrabold text-gray-900 dark:text-white">All Tasks</label>
+            <ul class="space-y-2 list-none list-inside">                
+                <li id="firstTask" class="rounded-sm transition ease-in text-sm hover:bg-gray-700 hover:text-white p-4 border border-solid border-black">
+                     Lorem ipsum
+                     <button id="button1" style="display: none;" class="text-white bg-red-700 text-xs py-1 px-2">Delete</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./app.js"></script>
+
+
 </body>
 </html>
