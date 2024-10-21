@@ -12,14 +12,14 @@
     <section class="my-10 mx-6">
         <form class="max-w-sm mx-auto">
             <label for="message" class="block mb-2 text-sm font-extrabold text-gray-900 dark:text-white">New Task</label>
-            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Task"></textarea>
+            <textarea id="task" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Task"></textarea>
             <div class="text-right my-4">
-                <button class="py-2 px-4 outline text-sm hover:bg-slate-700 hover:scale-110 focus:bg-slate-700 ease-in hover:text-white transition bg-slate-300 border-sky-600 border-solid">
-                    <a href="./quiz.html" onclick="shuffle()">Add</a>
+                <button class="py-2 px-4 rounded-lg outline text-xs font-bold hover:bg-slate-700 hover:scale-110 focus:bg-slate-700 ease-in hover:text-white transition bg-slate-300 border-sky-600 border-solid">
+                    <a href="#" onclick="addTask()">Add</a>
                 </button>
             </div>
             <label for="message" class="block mb-2 text-sm font-extrabold text-gray-900 dark:text-white">All Tasks</label>
-            <ul class="space-y-2 list-none list-inside">                
+            <ul id="theTasks" class="space-y-2 list-none list-inside">                
                 <li id="firstTask" class="rounded-sm transition ease-in text-sm hover:bg-gray-700 hover:text-white p-4 border border-solid border-black">
                      Lorem ipsum
                      <button id="button1" style="display: none;" class="text-white bg-red-700 text-xs py-1 px-2">Delete</button>
